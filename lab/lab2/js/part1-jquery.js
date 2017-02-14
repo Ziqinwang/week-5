@@ -169,5 +169,56 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
 // the function passed to `ready` until the HTML document is fully loaded and all scripts have
 // been interpreted. It is, therefore, an example of asynchronous behavior.
 $(document).ready(function() {
-  // Do your stuff here
+  // task 1/2/3/4
+    $("#text-label1").text('name');
+    //console.log($("#text-label1").text());
+    //console.log($("#text-label1").val());
+    $("#text-label2").text('age');
+    $('#text-input1').prop('disabled', false);
+    $("#text-label3").text('year');
+    $("#number-label").text('number');
+    $("#checkbox-label1").text('chooseright');
+    $("#checkbox-label2").text('chooseleft');
+    $('#cbox-input1').val('checked');
+    $('#cbox-input2').val('unchecked');
+    $("#color-label").text('color');
+    $("#text-input1").val("say your name")
+                     .prop('disabled', false);
+    //console.log($("#text-input1").text());
+    //console.log($("#text-input1").val());
+    $("#text-input2").val("how about age?")
+                     .prop('disabled', false);
+    $("#text-input3").prop('disabled', false);
+    $("#numeric-input").val(1)
+                       .prop('disabled', false);
+
+    //how to see the color foramt with console.log?
+    //how to set the property name withou type in
+    //if i put yes/no in checkbox, how to set it in the object with the symbol /
+    task3={
+      name:$("#text-input1").val(),
+      age:$("#text-input2").val(),
+      year:$("#text-input3").val(),
+      number:$("#numeric-input").val(),
+      chooseright: $('#cbox-input1').val(),
+      chooseleft: $('#cbox-input2').val(),
+      color:$("color-input").val(),
+    };
+    console.log(task3);
+    //task 5/6/8
+    var myIcon = L.divIcon({className: 'myIcon'});
+    //$('.leaflet-marker-icon') how to use it
+    $( "button" ).click(function() {
+          L.marker([40.046268994575442, -75.196545533108392],{icon: myIcon})
+        .bindPopup("LOL")
+        .addTo(map);
+    });
+    //task 9
+
+
+
+
+
+
+
 });

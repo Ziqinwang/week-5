@@ -12,6 +12,12 @@ body {
     top: 0;
 }
 
+.myIcon {
+        background: #FFE4C4;
+        border: 1px solid #666;
+        
+        }
+
 .sidebar {
     position: absolute;
     left: 0px;
